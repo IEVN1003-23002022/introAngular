@@ -1,0 +1,36 @@
+<div class="col-6">
+    <div class="mb-3">
+        <form action="">
+            <div class="form-group pt-4">
+                <label for="num1">Numero1:</label>
+                <input [(ngModel)]="num1"
+                 type="text" name="num1"
+                class="from-control" placeholder="Ingresa numero 1" id="num1" >
+            </div>
+            <div class="form-group pt-4">
+                <label for="num1">Numero2:</label>
+                <input [(ngModel)]="num2"
+                type="text" name="num2"
+                id="num2"
+                class="from-control" placeholder="Ingresa numero 1" >
+            </div>
+            <br/>
+            <!--<button (click)="sumar()" type="button" class="btn btn-primary">suma</button><br/>
+            <button (click)="restar()" type="button" class="btn btn-primary">resta</button><br/>
+            <button (click)="multiplicar()" type="button" class="btn btn-primary">multiplicacion</button><br/>
+            <button (click)="dividir()" type="button" class="btn btn-primary">division</button><br/>-->
+
+            <form>
+                <input  [(ngModel)]="opera"  type="radio"  name="group" value="sumar">sumar<br/>
+                <input  [(ngModel)]="opera" type="radio" name="group" value="restar">restar<br/>
+                <input  [(ngModel)]="opera" type="radio"  name="group" value="multiplicar">multiplicar<br/>
+                <input  [(ngModel)]="opera" type="radio"  name="group" value="dividir">dividir<br/>
+            </form>
+            <button (click)="result()" type="button" class="btn btn-primary">Resultado</button><br/>
+
+        </form>
+    </div>
+</div>
+<div class="col-6">
+    <h2>Resultado:{{resultado}}</h2>
+</div>

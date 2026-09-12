@@ -1,0 +1,35 @@
+<div class="col-6">
+  <div class="mb-3">
+    <form>
+      <div class="form-group pt-4">
+        <label for="num1">X1:</label>
+        <input [(ngModel)]="num1" type="text" name="num1" class="form-control ">
+      </div>
+
+      <div class="form-group pt-4">
+        <label for="num2">Y1:</label>
+        <input [(ngModel)]="num2" type="text" name="num2" class="form-control" >
+      </div>
+      <br/>
+      <br/>
+
+    <div class="form-group pt-4">
+        <label for="num1">X2:</label>
+        <input [(ngModel)]="num3" type="text" name="num1" class="form-control" >
+      </div>
+
+      <div class="form-group pt-4">
+        <label for="num2">Y2:</label>
+        <input [(ngModel)]="num4" type="text" name="num2" class="form-control">
+      </div>
+      <br/>
+      <br/>
+
+      <button (click)="resultado()"  type="button" class="btn btn-primary">Resultado</button><br/>
+    </form>
+  </div>
+</div>
+
+<div class="col-6" >
+  <h2>Resultado: {{result}}</h2>
+</div>
